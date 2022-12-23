@@ -27,7 +27,7 @@ export class ProductController {
         const product = await this.productService.readById(id);
         return response.status(HttpStatus.OK).json({
             'message': 'OK',
-        })
+        });
     }
 
     @Put('/:id')
